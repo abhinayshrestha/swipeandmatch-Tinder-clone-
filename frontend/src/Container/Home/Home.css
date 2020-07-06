@@ -1,0 +1,54 @@
+.desktop-left-panel {
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    position: relative;
+    width: 350px;
+    z-index:  99;
+    background: #e9ebee;
+}
+.desktop-nav-bar {
+    height: 70px;
+    background-color: #fc9842;
+    background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+}
+.back-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.desktop-profile-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.desktop-profile-icon img{
+    height: 40px;
+    width : 40px;
+    object-fit: cover;
+}
+
+.desktop-profile-name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.desktop-tips {
+    font-weight : 600;
+}
+
+.desktop-tips i {
+    font-size: 20px;
+    margin: 0px 5px;
+}

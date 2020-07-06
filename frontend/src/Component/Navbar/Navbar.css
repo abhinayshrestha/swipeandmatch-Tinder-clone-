@@ -1,0 +1,21 @@
+.mob-nav{
+    height: 50px;
+}
+.mob-nav-item{
+    line-height: 50px;
+}
+
+i.fa{
+    font-size: 20px;
+    color: #fff;
+}
+.row {
+    margin-bottom: 0px;
+}
+i.active {
+    background: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: #f44336;
+    box-shadow: 2px 2px 10px #555;
+}

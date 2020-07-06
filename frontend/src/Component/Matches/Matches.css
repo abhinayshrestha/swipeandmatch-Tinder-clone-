@@ -1,0 +1,21 @@
+.match-container {
+    padding: 20px;
+}
+
+.match-pic {
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.match-user {
+    height: 100px;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.match-name{
+    text-align: center;
+}

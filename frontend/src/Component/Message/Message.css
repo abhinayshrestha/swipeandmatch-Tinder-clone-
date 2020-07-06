@@ -1,0 +1,52 @@
+.message-top{
+    height: 60px;
+    background: #fff;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 10px #888;
+}
+
+.message-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.message-name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.message-form {
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #ff3300; 
+}
+
+.msg-input {
+    border: 0;
+    outline: 0;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+}
+
+.msg-send-btn {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+.message-body{
+    background: #fff;
+    height: calc(100vh - 171px);
+    padding: 10px;
+}

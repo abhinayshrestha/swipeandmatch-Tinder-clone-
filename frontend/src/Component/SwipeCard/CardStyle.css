@@ -1,0 +1,51 @@
+  #card-root > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #card-root > div > div {
+    position: absolute;
+    top: 3%;
+    background-color: #fff;
+    width: 95%;
+    height: 78%;
+    will-change: transform;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  #card-root > div > div > div{
+    height: 100%;
+  }
+  #like-dislike{
+    font-size: 40px;
+    position: absolute;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 50px; 
+  }
+  #like-dislike.right{
+    right : 5px;
+  }
+  .card-controller {
+    position : absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-name {
+    text-shadow: 8px 1px 7px #0C0503;
+    margin-bottom: 3px; 
+    color: #fff;
+  }
+ .distance {
+  text-shadow: 8px 8px 7px #0C0503;
+  margin-bottom: 17px;
+  color: #fff;      
+  font-weight: bolder;
+ }

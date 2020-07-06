@@ -1,0 +1,57 @@
+.profile-container{
+    height: calc(100vh - 50px);
+    background: #e9ebee;
+}
+.profile-pic{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px; 
+    overflow: hidden;
+}
+.profile-img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.profile-section{
+    height: 55vh;
+}
+.dots{
+    height: 7px;
+    width: 7px;
+    border-radius:7px;
+    margin-top: 20px;
+}
+.tips{
+    margin-top: -10px;
+    background: #e9ebee;
+    height: 30vh;
+    overflow-x: hidden;
+}
+.slick-dots div{
+    background: #b3b3b3;
+}
+.slick-dots .slick-active div{
+    background-color : lightcoral;
+}
+
+.slide-tips{
+    position: relative;
+    top : 30%;
+    transform: translateY(-50%);
+}
+
+.logout{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    width: 40vw;
+    border-radius: 40vw;
+    font-weight: bold; 
+    height: 7vh;
+    line-height: 7vh;
+    color: lightcoral;
+}
