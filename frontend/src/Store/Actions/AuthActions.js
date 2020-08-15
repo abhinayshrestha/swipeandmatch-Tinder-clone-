@@ -42,7 +42,7 @@ export const checkTokenTime = (expirationTime) => {
 export const onAuth = (data) => {
     return dispatch => {
         dispatch(authStart());
-        axios.post('http://localhost:8080/auth/facebook',data)
+        axios.post('/auth/facebook',data)
              .then( response => {
                  const expirationDate = new Date(new Date().getTime() + response.data.expiresIn * 1000);
                  localStorage.setItem('token',response.data.token);

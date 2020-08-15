@@ -14,6 +14,11 @@ app.use((bodyParser.urlencoded({ extended : false })));
 app.use(bodyParser.json()); //parsing json data in request header 
 app.use('/public/uploads',express.static('public/uploads')); //making images available to users
 
+app.use('/check-server', (req, res) => {
+    res.json({
+        message : 'Server is up and running'
+    })
+})
 app.use('/auth',authRoute); //forwarding to auth routes 
 app.use('/app',appRoute);//forwarding to app routes
 app.use('/file',fileRoute);
@@ -32,11 +37,11 @@ app.use((error,req,res,next) => {
 })        
 
 //dataBase connection...
-mongoose.connect('mongodb+srv://abhinay:loremipsum123@cluster0-xbhy7.mongodb.net/swipe?retryWrites=true&w=majority',{
+mongoose.connect('your_mongodb_connection_string',{
     useNewUrlParser: true  
    }) 
   .then( res =>{
         console.log('connected');
         //onsuccess listen to incomming request at port 8080  
-        app.listen(8080);     
+        app.listen(process.env.PORT || 8080);     
   }).catch( err => console.log(err) );

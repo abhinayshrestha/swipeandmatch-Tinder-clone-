@@ -6,7 +6,7 @@ const fs = require('fs');
 mongoose.set('useFindAndModify', false);
 
 exports.fileUpload = (req, res, next) => {
-    const url = 'http://localhost:8080/'+req.file.path.replace(/\\/g, "/");
+    const url = 'https://swipeandmatch.herokuapp.com/'+req.file.path.replace(/\\/g, "/");
     User.findOneAndUpdate({ userId : req.userId }, {$push: {photos: url}}).select('photos')
         .then(photos => {
             photos.photos.push(url);

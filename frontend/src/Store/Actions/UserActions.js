@@ -25,7 +25,7 @@ export const loadError = (err) => {
 export const getUserData = (token) => {
      return dispatch => {
          dispatch(startLoading());
-         axios.get('http://localhost:8080/app',
+         axios.get('/app',
           { headers : {Authorization : `Bearer ${token}`} }
           )
            .then(response => {
@@ -53,7 +53,7 @@ const updateError = err => {
 
 export const updateSetting = (token,setting) => {
     return dispatch => {
-        axios.put('http://localhost:8080/app/setting',
+        axios.put('/app/setting',
                    setting,
                    { headers : { Authorization : `Bearer ${token}` } }
                 )
@@ -90,7 +90,7 @@ const profileUpdateError = err => {
 export const updateProfile = (token,userInfo) => {
     return dispatch => {
         dispatch(startProfileUpdate());
-        axios.put('http://localhost:8080/app/profile',
+        axios.put('/app/profile',
                     userInfo,
                     { headers : { Authorization : `Bearer ${token}` } } 
                  )

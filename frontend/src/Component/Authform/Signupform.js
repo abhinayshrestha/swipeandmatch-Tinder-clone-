@@ -13,10 +13,9 @@ import { withRouter } from 'react-router-dom';
 const FacebookLoginButton = ({facebookResponse}) => (
     <FacebookLogin
         icon={<i className='fa fa-facebook-f left' style={{marginRight:'10px'}}></i> }
-        appId="351989509051750"
+        appId="YOUR_FACEBOOK_APP_ID"
         autoLoad={false}
-        fields="name,picture.type(large),gender,birthday"
-        scope="public_profile,user_gender,user_birthday"
+        fields="name,picture.type(large)"
         callback={facebookResponse}
         cssClass="blue fb-btn btn z-depth-0 "
         state = 'ok'

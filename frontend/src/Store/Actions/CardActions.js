@@ -15,7 +15,7 @@ export const removeCard  = (direction,id,liked) => {
             userId : getState().userReducer.id,
             liked : liked
         }
-        axios.post('http://localhost:8080/cards/swipe',
+        axios.post('/cards/swipe',
                     swipeInfo,
                 { headers : { Authorization : `Bearer ${localStorage.getItem('token')}` } })
                 .then(response => {
@@ -58,7 +58,7 @@ export const loadCards = (token,lat,lng) => {
              maxDistance : getState().userReducer.setting.distance
         }
         dispatch(startCardLoading());
-        axios.post('http://localhost:8080/cards',
+        axios.post('/cards',
                         cardInfo,
                         { headers : { Authorization : `Bearer ${token}` } }
                   )
